@@ -1,0 +1,267 @@
+.color {
+    background-color: turquoise;
+}
+.nav {
+    position: fixed;
+    padding-top: .6rem;
+    top: 0px;
+    width: 100vw;
+    height: 5rem;
+    min-height: fit-content;
+    z-index: +1;
+    color: silver;
+}
+.m-top{
+    margin-top: 5rem;
+    padding-top: 2rem;
+}
+.b-shdw {
+    border: 2px silver solid;
+    box-shadow: turquoise 5px 5px, rgb(97, 197, 187) 10px 10px, rgba(68, 240, 223, 0.363) 15px 15px ,rgba(151, 219, 212, 0.356) 20px 20px;
+    width: 13rem;
+    height: 19rem;
+    /* min-width: 10rem; */
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: silver;
+    z-index: 0;
+    font-size: .8rem;
+}
+.submit{
+    border: 2px silver solid;
+    box-shadow: turquoise 2px 5px;
+    border-radius: 4px;
+    position: relative;
+    top: 1rem;
+    left: 3.4rem;
+}
+.b-fixed {
+    position: relative;
+    bottom: 0px;
+}
+.flex {
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+.bx-ctr {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+    margin-top: 7rem;
+    padding: 3rem 0 6rem 0;
+}
+.body{
+    background-color: black;
+    min-height: fit-content;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+}
+.group {
+    margin-bottom: 1.5rem;
+    border: 2px grey solid;
+    background-color: whitesmoke;
+    color:grey;
+    border-radius: 4px;
+    height: 10rem;
+    padding: .4rem;
+    word-spacing: 4px;
+}
+.footer {
+    background-color: whitesmoke;
+    padding: 1rem 2rem 3rem 0;
+    height: 12rem;
+
+}
+h1 {
+    text-decoration: underline;
+}
+p{
+    color:black;
+}
+.in-shdw:hover {
+    box-shadow: turquoise 0px -23px 25px 0px inset, rgba(64, 224, 208, 0.678) 0px -36px 30px 0px inset, turquoise 0px -79px 40px 0px inset, turquoise 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    width: fit-content;
+    margin: auto;
+    border-radius: 15px;
+    height: 1.8rem;
+    cursor: pointer;
+}
+.button-56 {
+  align-items: center;
+  background-color: whitesmoke;
+  border: 2px solid #111;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  height: 48px;
+  min-width: 7rem;
+  padding: 0 25px;
+  position: relative;
+  margin-top: .3rem;
+}
+.button-56:after {
+  background-color: #111;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform .2s ease-out;
+  z-index: -1; 
+}
+.button-56:hover:after {
+  transform: translate(0, 0);
+}
+.button-56:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
+a, h6 {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #111;
+    font-size: 2rem;
+}
+.p-bar{
+    /* margin-top: 7rem; */
+    background-color: black;
+    height: 30rem;
+}
+.i-bar{
+    position: relative;
+    top: 7.5%;
+    margin: 4rem 7.5% 0 7.5%;
+    background-color: silver;
+    height: 25rem;
+    width: 85%;
+}
+#b-pic{
+    width: 55%;
+}
+#f-pic{
+    width: 100vw;
+}
+.l-bar{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    left: 0%;
+    height: 100vh;
+    margin-top: 1.4rem;
+    padding: 1rem;
+    z-index: +1;
+}
+#h-btn{
+    color:crimson;
+    background: linear-gradient(210deg,whitesmoke,turquoise);
+}
+#inq-bar{
+    background-color: silver;
+    width: 10vw;
+    height: 100%;
+}
+#inq-box{
+    background-color: #ccc;
+    margin: 0 0 0 10vw;
+    height: 100vh;
+    padding-bottom: 1.4rem;
+}
+.title{
+    width: 100%;
+    border-radius: 4rem 4rem 0 0;
+    height: 3rem;
+    position: relative;
+    top: -1.3rem;
+    background: linear-gradient(rgba(56, 201, 186, 0.267),turquoise);
+    padding-top: 1.5rem;
+}
+.border{
+    width: 40%;
+    height: fit-content;
+    margin: auto;
+    margin-bottom: 1rem;
+    padding: 1rem 0 3rem 0;
+    border-radius: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.home-btn{
+    position:absolute;
+    bottom: 2rem;
+    left: 5rem;
+    background: linear-gradient(whitesmoke,turquoise);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 6px;
+    padding: .3rem;
+    width: 5rem;
+    height: 2rem;
+    cursor: pointer;
+}
+.m-b{
+    margin-bottom: 1rem;
+}
+.canvas{
+    /* position:relative; */
+    /* top:-16rem; */
+    height: 28rem !important;
+    width: 55% !important;
+    margin: auto;
+    margin-bottom: 10rem !important;
+    box-shadow: turquoise 0px 50px 100px -20px, turquoise 0px 30px 60px -30px, turquoise 0px -2px 6px 0px inset, turquoise 0px 0px 30px 30px;
+
+}
+.box{
+    position: relative;
+    top: 5rem;
+}
+#m-git{
+    box-shadow: turquoise 0px -23px 25px 0px inset, turquoise 0px -36px 30px 0px inset, turquoise 0px -129px 40px 0px inset, turquoise 0px 2px 1px, turquoise 0px 4px 2px, turquoise 0px 8px 4px, rgba(64, 224, 208, 0.479) 0px 16px 8px;
+    width: fit-content;
+    margin: auto;
+    border-radius: 5rem;
+
+}
+#m-git:hover{
+    box-shadow: silver 0px -23px 25px 0px inset, silver 0px -36px 30px 0px inset, turquoise 2px 2px 2px,turquoise 0px -109px 10px 0px inset, turquoise 0px 2px 1px, turquoise 0px 4px 2px, turquoise 0px 8px 4px, turquoise 0px 16px 8px;
+    cursor: pointer;
+}
+.m-auto{
+    margin: auto !important;
+}
+.three-js{
+    margin: 0;
+    padding: 0;
+    height: 103vh !important;
+    background-color: darkslateblue;
+}
+.r{
+    align-items: right;
+    justify-content: end;
+    margin-bottom: 0;
+}
+.head{
+    background-color: turquoise;
+    position: absolute;
+    top: -1.3rem;
+    height: 3rem;
+    cursor: pointer;
+    padding: 1rem;
+    color: crimson;
+}
+.silver{
+    background-color: silver !important;
+    width:100%;
+    height:100%;
+}
