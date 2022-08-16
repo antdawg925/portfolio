@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 import * as cocossd from "@tensorflow-models/coco-ssd";
 import Webcam from "react-webcam";
 import { DrawRect } from "../components/DrawRect";
+import "../CSS/style.css"
+
 
 const ObjDetection = () => {
   const navigate = useNavigate();
@@ -54,7 +56,7 @@ const ObjDetection = () => {
         detect(net);
       }, 200)
     };
-    // runCoco();
+    runCoco();
   }, []);
 
   return (
@@ -62,7 +64,9 @@ const ObjDetection = () => {
       <h3 className="head">
         A machine learning model using TensorFlow.Js to predict objects that appear in your webcam! 
       </h3>
+
       <h2 className="nav head" onClick={() => navigate("/")}>Home</h2>
+
       <header className="App-header">
         <Webcam
           ref={webcamRef}
@@ -94,7 +98,9 @@ const ObjDetection = () => {
             height: 480,
           }}
         />
+        
       </header>
+
     </div>
   );
 }

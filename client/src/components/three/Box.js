@@ -1,3 +1,5 @@
+import "../../CSS/style.css"
+import "../../CSS/inq.css"
 import React from "react";
 
 export const Box = () => {

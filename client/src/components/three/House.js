@@ -1,9 +1,8 @@
 import React, {useRef, useState} from 'react';
-import { MeshWobbleMaterial, softShadows, Stars } from '@react-three/drei';
+import { softShadows, } from '@react-three/drei';
 import { useSpring, a } from "@react-spring/three";
-import {  useFrame} from "@react-three/fiber"
 import "../../CSS/style.css"
-import { CylinderBufferGeometry } from 'three';
+import "../../CSS/inq.css"
 
 
 export const House = ({position, color, args}) => {

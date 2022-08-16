@@ -5,11 +5,12 @@ const Nav = () => {
     const navigate = useNavigate();
     const newTab = () => {
         window.open(
-        "https://docs.google.com/document/d/1TYVeOvcPFNIMikMFnPaxJORiJ8RnqHLM/edit", "_blank");
+            "https://docs.google.com/document/d/1TYVeOvcPFNIMikMFnPaxJORiJ8RnqHLM/edit", "_blank");
     }
 
-    return(
+    return (
         <div className="color nav flex spc-b">
+
             <h6 className="button-56" onClick={() => newTab()}> Resume </h6>
             <h6 className="button-56" role="button" onClick={() => navigate("/inquiries")}>User Features</h6>
             <h6 className="button-56" role="button" onClick={() => navigate("/three")}>JS in 3D</h6>

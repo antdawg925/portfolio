@@ -1,3 +1,5 @@
+import "../../CSS/style.css"
+import "../../CSS/inq.css"
 
 export const Plane =() => {
     return (

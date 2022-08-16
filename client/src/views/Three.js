@@ -18,7 +18,9 @@ const Three = () => {
                 shadowMap
                 camera={{ position: [-10, 8, 50], fov: 50 }}
             >
-                <ambientLight intensity={0.3} />
+
+                <ambientLight intensity={0.5} />
+
                 <directionalLight
                     castShadow
                     position={[0, 10, 0]}
@@ -31,12 +33,20 @@ const Three = () => {
                     shadow-camera-top={10}
                     shadow-camera-bottom={-10}
                 />
+
+               
+
                 <pointLight position={[-10, 0, -20]} intensity={0.5} />
                 <pointLight position={[0, -10, -0]} intensity={1.5} />
+
                 <Houses />
+
                 <OrbitControls />
+
             </Canvas>
+
             <p className="home-btn" onClick={() => navigate("/")}>Home</p >
+
         </div>
 
     )

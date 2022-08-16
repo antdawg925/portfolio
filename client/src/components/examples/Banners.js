@@ -1,3 +1,5 @@
+import "../../CSS/style.css"
+import "../../CSS/inq.css"
 import { useState } from "react";
 export const Banners = () => {
 
@@ -40,16 +42,23 @@ export const Banners = () => {
     return (
         <div className="form-box form">
             <h1 className="title">Banners</h1>
+
             <div className="flex spc-b m-top">
+
                 <h2 onClick={() => slide(false)}> x </h2>
                 <img src={slider} alt="pic" height={"300rem"} />
                 <h2 onClick={() => slide(true)}> x </h2>
+
             </div>
+
             <div>
+
                 <p className="m-top post border ">
-                    Great opportunity for your company to advertise photos of your products and services or display work culture between colleagues. 
+                    Great opportunity for your company to advertise photos of your products and services or display work culture between colleagues.
                 </p>
+
             </div>
+            
         </div>
     )
 }

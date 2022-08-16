@@ -82,6 +82,7 @@
     padding: .8rem;
     text-align: left;
     width: 80%;
+    height: fit-content;
 }
 .spc-b{
     align-items: center;
@@ -92,4 +93,14 @@
     margin: 1rem 2.5rem 0 0;
     color: crimson;
     text-decoration: underline;
+}
+.buff{
+    width: 50%;
+    height: 20%;
+    margin-top: 25%;
+    padding: 3rem 1rem 0 1rem;
+    font-weight: bold;
+    text-decoration: underline;
+    word-spacing: 3px;
+    line-height: 1.5rem;
 }

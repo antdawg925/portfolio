@@ -1,16 +1,17 @@
-import { useRef, useEffect } from "react"
+import { useRef} from "react"
 import { Canvas } from "@react-three/fiber"
 import { OrbitControls, Stars } from "@react-three/drei"
-import { WireSphere } from "./three/WireSphere"
-import { SpinMesh } from "./three/SpinMesh"
-import { useSpring, a } from "@react-spring/three";
+import { WireSphere } from "./WireSphere"
+import { SpinMesh } from "./SpinMesh"
 import { useFrame } from "@react-three/fiber"
+import "../../CSS/style.css"
 
 
-const Orbital = () => {
+
+const Orbitalz = () => {
 
     const mesh = useRef();
-    useFrame(() => (mesh.current.rotation.y += 0.02));
+    useFrame(() => (mesh.current.rotation.y += 0.008));
 
     return (
         <mesh ref={mesh}>
@@ -25,27 +26,33 @@ const Orbital = () => {
             <SpinMesh position={[5, 0, 5]} color="silver" speed={12} />
             <SpinMesh position={[-5, 0, 5]} color="turquoise" speed={9} />
             <SpinMesh position={[-5, 0, -5]} color="teal" speed={9} />
-            <SpinMesh position={[5,0, -5]} color="skyblue" speed={15} />
+            <SpinMesh position={[5, 0, -5]} color="skyblue" speed={15} />
 
         </mesh>
     )
 }
 
 
-export const PhotoBar = () => {
+export const Orbital = () => {
     return (
         <div className="p-bar">
 
             <div className="">
 
-                <Canvas className="canvas">
+                <Canvas
+                    className='canvas'
+                    shadowMap
+                    camera={{ position: [0, 10, 60], fov: 10 }}
+                >
 
                     <OrbitControls />
                     <Stars />
-                    <ambientLight intensity={0.5} />
+                    <ambientLight intensity={.5} />
                     <spotLight position={[-10, 5, 15]} angle={0.5} />
+                    <spotLight position={[10, 5, 15]} angle={0.5} />
+                    <spotLight position={[10, 5, -15]} angle={0.5} />
 
-                    <Orbital />
+                    <Orbitalz />
 
                 </Canvas>
 

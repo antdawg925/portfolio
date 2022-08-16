@@ -3,6 +3,7 @@ import { MeshWobbleMaterial, softShadows, } from '@react-three/drei';
 import { useSpring, a } from "@react-spring/three";
 import { useFrame } from "@react-three/fiber"
 import "../../CSS/style.css"
+import "../../CSS/inq.css"
 
 
 export const WireSphere = ({ position, color, speed, args }) => {

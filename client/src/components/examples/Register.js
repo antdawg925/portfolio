@@ -1,3 +1,5 @@
+import "../../CSS/style.css"
+import "../../CSS/inq.css"
 
 export const Register = (props) => {
 
@@ -20,6 +22,7 @@ export const Register = (props) => {
                 <input type="password" name="ex" className="input" />
 
                 <button className="submit"> Submit </button>
+                
             </div>
 
         </div >

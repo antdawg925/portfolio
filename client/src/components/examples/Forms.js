@@ -1,4 +1,5 @@
-// import ".../CSS/inq.css"
+import "../../CSS/style.css"
+import "../../CSS/inq.css"
 import { useState } from "react"
 import { Login } from "./Login";
 import { Register } from "./Register";
@@ -8,6 +9,7 @@ export const Forms = () => {
 
     return (
         <div>
+
             {
                 LorR ? (
                     <>
@@ -19,6 +21,7 @@ export const Forms = () => {
                     </>
                 )
             }
+
         </div>
     )
 }

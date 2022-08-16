@@ -1,10 +1,11 @@
+import "../CSS/style.css"
 
 export const DrawRect = (detections, ctx) => {
-    detections.forEach(prediction=>{
+    detections.forEach(prediction => {
         //Get prediction results
         console.log("prediction", prediction.bbox);
-        const [x,y,width,height] = prediction['bbox'];
-        const text = (prediction['class'] + " " + (Math.round(prediction["score"] * 100))+"%");
+        const [x, y, width, height] = prediction['bbox'];
+        const text = (prediction['class'] + " " + (Math.round(prediction["score"] * 100)) + "%");
 
         //set styling
         const color = 'turquoise';
@@ -14,8 +15,8 @@ export const DrawRect = (detections, ctx) => {
 
         //Draw rectangles and text
         ctx.beginPath();
-        ctx.fillText(text,x,y);
-        ctx.rect(x,y,width,height);
+        ctx.fillText(text, x, y);
+        ctx.rect(x, y, width, height);
         ctx.stroke();
     })
 }

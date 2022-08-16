@@ -1,15 +1,9 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import { Canvas } from "@react-three/fiber"
-import { Box, OrbitControls, Stars } from "@react-three/drei";
-import { useSpring, a } from "@react-spring/three";
-
+import {  a } from "@react-spring/three";
 import "../../CSS/style.css"
-import { SpinMesh } from '../../components/three/SpinMesh';
+import "../../CSS/inq.css"
 import { StarSky } from '../../components/three/Stars';
 import { House, Roof } from '../../components/three/House';
-import { WireSphere } from '../../components/three/WireSphere';
-                   
 
 export const Houses = () => {
 

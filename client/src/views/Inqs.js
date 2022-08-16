@@ -35,14 +35,19 @@ export const Inqs = () => {
 
     return (
         <div id="inq-bar"> 
+
             <div className="color l-bar">
+
                 <h6 className="button-56" id="h-btn" onClick={()=> navigate("/")}>Home</h6 >
                 <h6 className="button-56" onClick={() => flipSwitch(2)}>Nav Bar</h6 >
                 <h6 className="button-56" onClick={() => flipSwitch(0)}>Banners</h6 >
                 <h6 className="button-56" onClick={() => flipSwitch(1)}>Forms</h6 >
                 <h6 className="button-56" onClick={() => flipSwitch(3)}>Posts</h6 >
+
             </div>
+
             <div id="inq-box">
+
                 {
                     form ? (
                         <Forms id="the-form"/> 
@@ -66,11 +71,17 @@ export const Inqs = () => {
                 {
                     info ? (
                         <div className="form-box form">
-                            <p style={{zIndex:"-1"}}> Please select one of the options to the left to view a few potential features to incorporate into your interface.</p>
+
+                            <p className="buff border"> 
+                                Please select one of the options to the left<br/> to view a few potential features to<br/> consider for your interface.
+                            </p>
+
                         </div>
+
                     ): null
                 }
             </div>
+            
         </div>
     )
 }
