@@ -24,9 +24,9 @@ const Orbitalz = () => {
             />
 
             <SpinMesh position={[5, 0, 5]} color="silver" speed={12} />
-            <SpinMesh position={[-5, 0, 5]} color="turquoise" speed={9} />
-            <SpinMesh position={[-5, 0, -5]} color="teal" speed={9} />
-            <SpinMesh position={[5, 0, -5]} color="skyblue" speed={15} />
+            <SpinMesh position={[-5, 0, 5]} color="teal" speed={9} />
+            <SpinMesh position={[5, 0, -5]} color="teal" speed={9} />
+            <SpinMesh position={[-5, 0, -5]} color="silver" speed={15} />
 
         </mesh>
     )
