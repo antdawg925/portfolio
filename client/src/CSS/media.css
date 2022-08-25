@@ -1,80 +1,79 @@
 @media (max-width: 1800px) {
-    p{
-        font-size: .8rem;
-    }
+  p {
+    font-size: 0.8rem;
+  }
 }
 @media (max-width: 1100px) {
-    p{
-        font-size: .75rem;
-    }
+  p {
+    font-size: 0.75rem;
+  }
 }
 @media (max-width: 850px) {
-    p{
-        font-size: .65rem;
-    }
+  p {
+    font-size: 0.65rem;
+  }
 }
-@media (max-height: 500px){
-    p{
-        font-size: .65rem;
-    }
+@media (max-height: 500px) {
+  p {
+    font-size: 0.1rem;
+  }
 }
-@media (min-width:850px){
-
-    #git-links{
-        display: flex;
-    }
-    .flexi{
-        display: flex;
-        align-items: center;
-        /* justify-content: space-around; */
-        gap: 12rem;
-    }
-    .nav{
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-
-}
-@media (max-width: 850px) {
-
-    #git_links{
-        display: flex;
-        flex-direction: column;
-
-    }
-    .b-shdw{
-        height:18rem;
-        margin-bottom: 4rem;
-    }
-    .flexi{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .nav{
-        height: fit-content;
-        margin-bottom: 20rem;
-    }
-    #m-git{
-        margin-top: 4rem;
-    }
-}
-@media (max-width:1350px) {
-    .flexi{
-        display: flex;
-        align-items: center;
-        /* justify-content: space-around; */
-        gap: 5rem;
-    }
-
-}
-.flexo{
+@media (min-width: 850px) {
+  #git-links {
+    display: flex;
+  }
+  .flexi {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
     gap: 10rem;
+  }
+  .nav {
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    justify-content: space-evenly;
+  }
 }
-@media (min-width: 800px){
-    .flexo{
-        margin: 5rem 0;
-    }
+@media (max-width: 850px) {
+  #git_links {
+    display: flex;
+    flex-direction: column;
+  }
+  .b-shdw {
+    height: 18rem;
+    margin-bottom: 4rem;
+  }
+  .flexi {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .nav {
+    height: 11rem;
+    margin-bottom: 20rem;
+  }
+  #m-git {
+    margin-top: 4rem;
+  }
 }
+@media (max-width: 1350px) {
+  .flexi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0rem 2rem;
+  }
+}
+.flexo {
+  gap: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+@media (max-width: 800px) {
+  .flexo {
 
+  }
+}

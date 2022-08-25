@@ -18,7 +18,7 @@ const GitHubLinks = () => {
 
     return (
         <div className="bx-ctr">
-          
+
             <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="gitcat" onClick={() => openGit(3)} id="m-git" />
 
             <div id='git-links'>
@@ -35,9 +35,7 @@ const GitHubLinks = () => {
 
                     </div>
 
-                    <p onClick={() => openGit(4)} className="b-fixed in-shdw">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="gitcat" style={{ width: "3rem" }} />
-                    </p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" onClick={() => openGit(4)} className="b-fixed in-shdw" alt="gitcat" style={{ width: "3rem" }} />
 
                 </div>
 
@@ -47,7 +45,7 @@ const GitHubLinks = () => {
                     <div className="group">
 
                         <p>
-                            A Flask server writes queries to database allowing users to create accounts, follow users and like their posts.
+                            A Flask server sends queries to MySQL database allowing users to create accounts, follow users and like their posts.
                             A React platform displays live news along with the posts on the main feed page.
                         </p>
 
@@ -55,9 +53,7 @@ const GitHubLinks = () => {
 
                     <div className="b-fixed">
 
-                        <p onClick={() => openGit(1)} className="b-fixed in-shdw" >
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="gitcat" style={{ width: "3rem" }} />
-                        </p>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="gitcat" style={{ width: "3rem" }} onClick={() => openGit(1)} className="b-fixed in-shdw" />
 
                     </div>
 
@@ -72,12 +68,9 @@ const GitHubLinks = () => {
                             and see what sectors they are trading most. JavaScript server manages routes to MongoDB to save trade information.
                         </p>
 
+
                     </div>
-
-                    <p onClick={() => openGit(2)} className="b-fixed in-shdw">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="gitcat" style={{ width: "3rem" }} />
-                    </p>
-
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="gitcat" style={{ width: "3rem" }} onClick={() => openGit(2)} className="b-fixed in-shdw"/>
                 </div>
 
             </div>

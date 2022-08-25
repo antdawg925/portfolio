@@ -39,21 +39,11 @@ export const Inqs = () => {
 
             <div className="color l-bar ">
 
-
-                {/* <div className="flexo"> */}
-
-                    <h6 className="button-56" id="h-btn" onClick={()=> navigate("/")}>Home</h6 >
-                    <h6 className="button-56" onClick={() => flipSwitch(2)}>Nav Bar</h6 >
-                    <h6 className="button-56" onClick={() => flipSwitch(0)}>Banners</h6 >
-                    
-                {/* </div> */}
-
-                {/* <div className="flexo"> */}
-                    
-                    <h6 className="button-56" onClick={() => flipSwitch(1)}>Forms</h6 >
-                    <h6 className="button-56" onClick={() => flipSwitch(3)}>Posts</h6 >
-
-                {/* </div> */}
+                    <h6 className="btn-l-bar" id="h-btn" onClick={()=> navigate("/")}>Home</h6 >
+                    <h6 className="btn-l-bar" onClick={() => flipSwitch(3)}>Posts</h6 >
+                    <h6 className="btn-l-bar" onClick={() => flipSwitch(0)}>Banners</h6 >
+                    <h6 className="btn-l-bar" onClick={() => flipSwitch(1)}>Forms</h6 >
+                    {/* <h6 className="btn-l-bar" onClick={() => flipSwitch(2)}>Nav Bar</h6 > */}
 
             </div>
 

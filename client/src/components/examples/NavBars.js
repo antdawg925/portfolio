@@ -26,7 +26,7 @@ export const NavBars = () => {
         }
     }
     return (
-        <div className="ex-nav flexi nav">
+        <div className="ex-nav flexo ">
 
             <div className="flexi" onClick={() => setExtra(false)}>
 

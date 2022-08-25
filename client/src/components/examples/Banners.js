@@ -44,11 +44,11 @@ export const Banners = () => {
         <div className="form-box form">
             <h1 className="title">Banners</h1>
 
-            <div className="" style={{display:"flex", alignItems:"center", justifyContent:"center", gap:"3rem"}}>
+            <div className="" style={{display:"flex", alignItems:"center", justifyContent:"space-evenly"}}>
 
-                <h2 onClick={() => slide(false)}> x </h2>
-                <img src={slider} alt="pic" height={"300rem"} />
-                <h2 onClick={() => slide(true)}> x </h2>
+                <img src="https://cdn-icons-png.flaticon.com/128/3916/3916954.png" alt="back" onClick={() => slide(false)} style={{width:"1rem"}}/>
+                <img src={slider} alt="pic" className="slider" />
+                <img src="https://cdn-icons-png.flaticon.com/128/3916/3916924.png" alt="back" onClick={() => slide(true)} style={{width:"1rem"}}/>
 
             </div>
 

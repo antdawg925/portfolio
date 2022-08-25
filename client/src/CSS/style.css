@@ -6,8 +6,8 @@
     padding-top: 1.3rem;
     top: 0px;
     width: 100vw;
-    height: 5rem;
-    min-height: fit-content;
+    height: 2rem;
+    /* min-height: fit-content; */
     z-index: +1;
     color: silver;
     margin-bottom: 7rem;
@@ -155,11 +155,6 @@ p{
   background-color: #ffdeda;
   outline: 0;
 }
-@media (max-width:800px){
-    .button-56{
-        width: 1rem;
-    }
-}
 a, h6 {
     text-decoration: none;
     display: flex;
@@ -190,13 +185,16 @@ a, h6 {
 }
 .l-bar{
     position: fixed;
-    left: 0%;
+    left: 0;
+    top: 0;
     height: 100vh;
-    margin-top: 1.4rem;
-    padding: 1rem;
+    margin-top: 2.4rem;
+    margin: auto;
+    width: 10rem;
     z-index: +1;
+    padding: 1rem 0;
 }
-@media (min-width: 800px){
+@media (min-width: 900px){
     .l-bar{
         display: flex;
         flex-direction: column;
@@ -204,15 +202,14 @@ a, h6 {
         justify-content: space-evenly;
     }
 }
-@media (max-width: 800px){
+@media (max-width: 900px){
     .l-bar{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
-        /* height: 6rem; */
-        padding-top: 3rem;
-        /* width: 100%; */
+        height: 3.5rem;
+        width: 100%;
         margin-right: 10rem;
     }
 }
@@ -238,7 +235,7 @@ a, h6 {
     height: 100vh;
     padding-bottom: 10rem;
 }
-@media(max-width:800px){
+@media(max-width:00px){
     .form{
         margin-left: 20rem;
     }
@@ -257,7 +254,7 @@ a, h6 {
 .border{
     width: 40%;
     /* height: 25%; */
-    min-height: fit-content !important;
+    height: fit-content !important;
     margin: auto;
     /* font-size: 1rem; */
     margin-bottom: 1rem;
@@ -299,7 +296,7 @@ a, h6 {
     width: 10rem;
     height: min-content;
     margin: auto;
-    margin: 2rem auto ;
+    margin: 2rem auto;
     border-radius: 6rem;
     
 }
