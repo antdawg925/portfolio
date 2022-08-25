@@ -9,12 +9,21 @@ const Nav = () => {
     }
 
     return (
-        <div className="color nav flex spc-b">
+        <div className="color nav ">
 
-            <h6 className="button-56" onClick={() => newTab()}> Resume </h6>
-            <h6 className="button-56" role="button" onClick={() => navigate("/inquiries")}>User Features</h6>
-            <h6 className="button-56" role="button" onClick={() => navigate("/three")}>JS in 3D</h6>
-            <h6 className="button-56" role="button" onClick={() => navigate("/webcam")}>TF Object Detection</h6>
+            <div className="flexi">
+
+                <h6 className="button-56 w-btn" onClick={() => newTab()}> Resume </h6>
+                <h6 className="button-56 w-btn" role="button" onClick={() => navigate("/inquiries")}>User Features</h6>
+
+            </div>
+
+            <div className="flexi">
+
+                <h6 className="button-56 w-btn" role="button" onClick={() => navigate("/three")}>JS in 3D</h6>
+                <h6 className="button-56 w-btn" role="button" onClick={() => navigate("/webcam")}>TF Object Detection</h6>
+
+            </div>
 
         </div>
     )

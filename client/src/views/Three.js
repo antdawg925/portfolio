@@ -15,7 +15,7 @@ const Three = () => {
         <div className='three-js '>
             <Canvas
                 className='canvas-3'
-                shadowMap
+             
                 camera={{ position: [-10, 8, 50], fov: 50 }}
             >
 

@@ -10,7 +10,7 @@ export const WireSphere = ({ position, color, speed, args }) => {
     softShadows();
     const mesh = useRef();
 
-    useFrame(() => (mesh.current.rotation.x = mesh.current.rotation.y += 0.007));
+    useFrame(() => ( mesh.current.rotation.x += 0.007));
 
     const look = useSpring({ opacity: 1, from: { opacity: 0 } });
     return (
@@ -18,7 +18,7 @@ export const WireSphere = ({ position, color, speed, args }) => {
             position={position}
             ref={mesh}
             castShadow>
-            {console.log(look)}
+            {/* {console.log(look)} */}
             <dodecahedronGeometry attach='geometry' args={args} />
             <MeshWobbleMaterial
                 color={color}

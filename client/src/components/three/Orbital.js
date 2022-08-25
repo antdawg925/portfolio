@@ -41,13 +41,18 @@ export const Orbital = () => {
 
                 <Canvas
                     className='canvas'
-                    shadowMap
-                    camera={{ position: [0, 10, 60], fov: 10 }}
+                    camera={{ 
+                        position: [0, 35, 120], 
+                        fov: 10 
+                    }}
                 >
 
                     <OrbitControls />
+
                     <Stars />
+
                     <ambientLight intensity={.5} />
+
                     <spotLight position={[-10, 5, 15]} angle={0.5} />
                     <spotLight position={[10, 5, 15]} angle={0.5} />
                     <spotLight position={[10, 5, -15]} angle={0.5} />

@@ -1,5 +1,6 @@
 import "../../CSS/style.css"
 import "../../CSS/inq.css"
+import "../../CSS/exMedia.css"
 import { useState } from "react";
 export const Banners = () => {
 
@@ -43,7 +44,7 @@ export const Banners = () => {
         <div className="form-box form">
             <h1 className="title">Banners</h1>
 
-            <div className="flex spc-b m-top">
+            <div className="" style={{display:"flex", alignItems:"center", justifyContent:"center", gap:"3rem"}}>
 
                 <h2 onClick={() => slide(false)}> x </h2>
                 <img src={slider} alt="pic" height={"300rem"} />
@@ -51,13 +52,9 @@ export const Banners = () => {
 
             </div>
 
-            <div>
-
-                <p className="m-top post border ">
-                    Great opportunity for your company to advertise photos of your products and services or display work culture between colleagues.
-                </p>
-
-            </div>
+            <p className="m-top post border ">
+                Great opportunity for your company to advertise photos of your products and services or display work culture between colleagues.
+            </p>
             
         </div>
     )

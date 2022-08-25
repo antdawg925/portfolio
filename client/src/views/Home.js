@@ -1,4 +1,4 @@
-import Body from "../components/Body";
+// import Body from "../components/Body";
 import Footer from "../components/Footer";
 import GitHubLinks from "../components/GitHubLinks";
 import Nav from "../components/Nav";
@@ -12,7 +12,7 @@ const Home = () => {
             <Nav/>
             <GitHubLinks />
             <Orbital/>
-            <Body/>
+            {/* <Body/> */}
             <Footer/>
             
         </div>

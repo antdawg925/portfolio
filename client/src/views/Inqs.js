@@ -1,11 +1,12 @@
 import { useState } from "react"
-import "../CSS/style.css"
-import "../CSS/inq.css"
 import { useNavigate } from "react-router-dom"
 import { Forms } from "../components/examples/Forms"
 import { Banners } from "../components/examples/Banners"
 import { Posts } from "../components/examples/Posts"
 import { NavBars } from "../components/examples/NavBars"
+import "../CSS/style.css"
+import "../CSS/inq.css"
+import "../CSS/media.css"
 
 export const Inqs = () => {
     const [info, setInfo] = useState(true)
@@ -34,15 +35,25 @@ export const Inqs = () => {
     }
 
     return (
-        <div id="inq-bar"> 
+        <div id="inq-bar" > 
 
-            <div className="color l-bar">
+            <div className="color l-bar ">
 
-                <h6 className="button-56" id="h-btn" onClick={()=> navigate("/")}>Home</h6 >
-                <h6 className="button-56" onClick={() => flipSwitch(2)}>Nav Bar</h6 >
-                <h6 className="button-56" onClick={() => flipSwitch(0)}>Banners</h6 >
-                <h6 className="button-56" onClick={() => flipSwitch(1)}>Forms</h6 >
-                <h6 className="button-56" onClick={() => flipSwitch(3)}>Posts</h6 >
+
+                {/* <div className="flexo"> */}
+
+                    <h6 className="button-56" id="h-btn" onClick={()=> navigate("/")}>Home</h6 >
+                    <h6 className="button-56" onClick={() => flipSwitch(2)}>Nav Bar</h6 >
+                    <h6 className="button-56" onClick={() => flipSwitch(0)}>Banners</h6 >
+                    
+                {/* </div> */}
+
+                {/* <div className="flexo"> */}
+                    
+                    <h6 className="button-56" onClick={() => flipSwitch(1)}>Forms</h6 >
+                    <h6 className="button-56" onClick={() => flipSwitch(3)}>Posts</h6 >
+
+                {/* </div> */}
 
             </div>
 
@@ -73,7 +84,7 @@ export const Inqs = () => {
                         <div className="form-box form">
 
                             <p className="buff border"> 
-                                Please select one of the options to the left<br/> to view a few potential features to<br/> consider for your interface.
+                                Please select one of the options<br/> to view a few potential features to<br/> consider for your interface.
                             </p>
 
                         </div>

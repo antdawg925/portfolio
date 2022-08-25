@@ -1,10 +1,12 @@
 .form-box{
     position:absolute;
     top: 1.5rem;
-    right: 10%;
+    right: 13%; 
     margin: auto;
     width: 60%;
+    /* min-width: fit-content; */
     height: 80vh;
+    min-height: fit-content !important;
 }
 
 #the-form{
@@ -15,29 +17,42 @@
     border: .5px silver solid;
     margin: 2rem;
     height: 85%;
+    min-height: fit-content !important;
     border-radius: 4rem;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     background-color: whitesmoke;
+    padding-bottom: 1rem;
 }
+
 .input{
     border: 2px solid black;
-    width: 10rem;
+    width: 60%;
     display: flex;
     margin: auto;
     height: 1.4rem;
     border-radius: 4px;
     background-color: #ccc;
 }
+@media (max-width:700px){
+    .input{
+        width: 50%;
+        height:.5rem;
+        padding: .5rem;
+        font-size: .59rem;
+    }
+}
 .input:hover{
     background-color: whitesmoke;
 }
 .ex-nav{
     position: relative;
-    top: 1.4rem;
-    left: 2.8rem;
-    width: 87vw;
-    height: 5.5rem;
+    top: 0rem;
+    left: 0rem;
+    max-width: fit-content ;
+    height: 7.5rem;
     background-color: whitesmoke;
+    z-index: 0;
+    padding: 1rem;
 }
 #icon{
     box-shadow: turquoise 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, yellow 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px;
@@ -62,16 +77,16 @@
 }
 .btns:hover{
     background: linear-gradient( turquoise,silver);
-    min-height: 4.3rem;
+    min-height: 5rem;
     margin-top: 1rem;
-    padding: 3.2rem 1rem 0 1rem;
+    padding: 4.5rem 1rem 0 1rem;
     color: crimson;
     text-transform: uppercase;
     cursor: pointer;
 }
 #extend-nav{
     position: absolute;
-    top: 5.5rem;
+    top: 8.5rem;
     left: 0;
     background-color: whitesmoke;
     width: 100%;
@@ -82,12 +97,10 @@
     padding: .8rem;
     text-align: left;
     width: 80%;
-    height: fit-content;
+    height: 20%;
+    font-size: .9rem;
 }
-.spc-b{
-    align-items: center;
-    justify-content: space-evenly;
-} 
+
 .r-subT{
     text-align: right;
     margin: 1rem 2.5rem 0 0;

@@ -24,7 +24,7 @@ export const SpinMesh = ({ position, color, speed, args }) => {
             onClick={() => setExpand(!expand)}
             scale={props.scale}
             castShadow>
-            {console.log(look)}
+            {/* {console.log(look)} */}
             <dodecahedronGeometry attach='geometry' args={args} />
             <MeshWobbleMaterial
                 color={color}

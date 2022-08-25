@@ -1,0 +1,33 @@
+.pics{
+    width: 3rem;
+}
+@media (max-width:1600px){
+    .pics{
+        width: 2.5rem;
+    }
+}
+@media (max-width:1450px){
+    p{
+        font-size: .777rem;
+    }
+}
+@media (max-width:1400px){
+    p{
+        font-size: .7rem;
+    }
+}
+@media (max-width:1000px){
+    p{
+        font-size: .55rem;
+    }
+}
+@media(max-width:800px){
+    .form-box{
+        width:70%;
+        margin: 10rem auto;
+    }
+    .border{
+        width: 70%;
+        /* height: 20%; */
+    }
+}
