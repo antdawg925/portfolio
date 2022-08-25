@@ -24,9 +24,9 @@ const Orbitalz = () => {
             />
 
             <SpinMesh position={[5, 0, 5]} color="silver" speed={12} />
-            <SpinMesh position={[-5, 0, 5]} color="turquoise" speed={9} />
-            <SpinMesh position={[-5, 0, -5]} color="teal" speed={9} />
-            <SpinMesh position={[5, 0, -5]} color="skyblue" speed={15} />
+            <SpinMesh position={[-5, 0, 5]} color="teal" speed={9} />
+            <SpinMesh position={[5, 0, -5]} color="teal" speed={9} />
+            <SpinMesh position={[-5, 0, -5]} color="silver" speed={15} />
 
         </mesh>
     )
@@ -41,13 +41,18 @@ export const Orbital = () => {
 
                 <Canvas
                     className='canvas'
-                    shadowMap
-                    camera={{ position: [0, 10, 60], fov: 10 }}
+                    camera={{ 
+                        position: [0, 35, 120], 
+                        fov: 10 
+                    }}
                 >
 
                     <OrbitControls />
+
                     <Stars />
+
                     <ambientLight intensity={.5} />
+
                     <spotLight position={[-10, 5, 15]} angle={0.5} />
                     <spotLight position={[10, 5, 15]} angle={0.5} />
                     <spotLight position={[10, 5, -15]} angle={0.5} />

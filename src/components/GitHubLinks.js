@@ -1,30 +1,27 @@
 import "../CSS/style.css"
+import "../CSS/media.css"
 
 const GitHubLinks = () => {
-    const git1 = () => {
-        window.open(
-            "https://github.com/antdawg925/twitisphere", "_blank");
-    }
-    const git2 = () => {
-        window.open(
-            "https://github.com/antdawg925/TradeSmart-Charts", "_blank");
-    }
-    const git3 = () => {
-        window.open(
-            "https://github.com/antdawg925/", "_blank");
-    }
-    const git4 = () => {
-        window.open(
-            "https://github.com/antdawg925/portfolio", "_blank");
-    }
 
+    const openGit = (x) => {
+        if (x === 1) {
+            window.open("https://github.com/antdawg925/twitisphere", "_blank");
+        } else if (x === 2) {
+            window.open("https://github.com/antdawg925/TradeSmart-Charts", "_blank");
+        } else if (x === 3) {
+            window.open("https://github.com/antdawg925/", "_blank");
+        } else if (x === 4) {
+            window.open("https://github.com/antdawg925/portfolio", "_blank");
+        }
+        return x
+    }
 
     return (
         <div className="bx-ctr">
 
-            <div className="flex">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="gitcat" style={{ width: "10rem", marginRight: "5rem" }} onClick={() => git3()} id="m-git" />
-                
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="gitcat" onClick={() => openGit(3)} id="m-git" />
+
+            <div id='git-links'>
                 <div className="b-shdw">
                     <h1>Portfolio Site </h1>
 
@@ -38,9 +35,7 @@ const GitHubLinks = () => {
 
                     </div>
 
-                    <p onClick={() => git4()} className="b-fixed in-shdw">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="gitcat" style={{ width: "2rem" }} />
-                    </p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" onClick={() => openGit(4)} className="b-fixed in-shdw" alt="gitcat" style={{ width: "3rem" }} />
 
                 </div>
 
@@ -50,7 +45,7 @@ const GitHubLinks = () => {
                     <div className="group">
 
                         <p>
-                            A Flask server writes queries to database allowing users to create accounts, follow users and like their posts.
+                            A Flask server sends queries to MySQL database allowing users to create accounts, follow users and like their posts.
                             A React platform displays live news along with the posts on the main feed page.
                         </p>
 
@@ -58,9 +53,7 @@ const GitHubLinks = () => {
 
                     <div className="b-fixed">
 
-                        <p onClick={() => git1()} className="b-fixed in-shdw" >
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="gitcat" style={{ width: "2rem" }} />
-                        </p>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="gitcat" style={{ width: "3rem" }} onClick={() => openGit(1)} className="b-fixed in-shdw" />
 
                     </div>
 
@@ -75,12 +68,9 @@ const GitHubLinks = () => {
                             and see what sectors they are trading most. JavaScript server manages routes to MongoDB to save trade information.
                         </p>
 
+
                     </div>
-
-                    <p onClick={() => git2()} className="b-fixed in-shdw">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="gitcat" style={{ width: "2rem" }} />
-                    </p>
-
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="gitcat" style={{ width: "3rem" }} onClick={() => openGit(2)} className="b-fixed in-shdw"/>
                 </div>
 
             </div>

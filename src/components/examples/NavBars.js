@@ -26,9 +26,9 @@ export const NavBars = () => {
         }
     }
     return (
-        <div className="ex-nav flex spc-b">
+        <div className="ex-nav flexo ">
 
-            <div className="flex" onClick={() => setExtra(false)}>
+            <div className="flexi" onClick={() => setExtra(false)}>
 
                 <img src="https://cdn-icons-png.flaticon.com/128/4149/4149679.png" alt="icon" id="icon" height={"50rem"} />&nbsp;&nbsp;&nbsp;&nbsp;
                 <h2 id="name" >MacroSoft</h2>
@@ -43,12 +43,14 @@ export const NavBars = () => {
             {
                 extra ? (
                     <div id="extend-nav">
+
                         <NavComp
                             setHistory={setHistory} history={history}
                             setServices={setServices} services={services}
                             setCompany={setCompany} company={company}
                             setContact={setContact} contact={contact}
                         />
+                        
                     </div>
                 ) : null
             }

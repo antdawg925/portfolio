@@ -1,5 +1,6 @@
 import "../../CSS/style.css"
 import "../../CSS/inq.css"
+import "../../CSS/exMedia.css"
 import { useState } from "react";
 export const Banners = () => {
 
@@ -43,21 +44,17 @@ export const Banners = () => {
         <div className="form-box form">
             <h1 className="title">Banners</h1>
 
-            <div className="flex spc-b m-top">
+            <div className="" style={{display:"flex", alignItems:"center", justifyContent:"space-evenly"}}>
 
-                <h2 onClick={() => slide(false)}> x </h2>
-                <img src={slider} alt="pic" height={"300rem"} />
-                <h2 onClick={() => slide(true)}> x </h2>
-
-            </div>
-
-            <div>
-
-                <p className="m-top post border ">
-                    Great opportunity for your company to advertise photos of your products and services or display work culture between colleagues.
-                </p>
+                <img src="https://cdn-icons-png.flaticon.com/128/3916/3916954.png" alt="back" onClick={() => slide(false)} style={{width:"1rem"}}/>
+                <img src={slider} alt="pic" className="slider" />
+                <img src="https://cdn-icons-png.flaticon.com/128/3916/3916924.png" alt="back" onClick={() => slide(true)} style={{width:"1rem"}}/>
 
             </div>
+
+            <p className="m-top post border ">
+                Great opportunity for your company to advertise photos of your products and services or display work culture between colleagues.
+            </p>
             
         </div>
     )

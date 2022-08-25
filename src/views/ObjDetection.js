@@ -60,12 +60,12 @@ const ObjDetection = () => {
   }, []);
 
   return (
-    <div className="App">
-      <h3 className="head">
+    <div className="color">
+      <h3 style={{paddingTop:"1rem"}}>
         A machine learning model using TensorFlow.Js to predict objects that appear in your webcam! 
       </h3>
 
-      <h2 className="nav head" onClick={() => navigate("/")}>Home</h2>
+      <h2 className="button-56 w-btn" style={{margin:"2rem auto", padding:"1rem 0 0 0"}}onClick={() => navigate("/")}>Home</h2>
 
       <header className="App-header">
         <Webcam
@@ -74,7 +74,7 @@ const ObjDetection = () => {
           style={{
             position: "absolute",
             margin: "auto",
-            marginTop: "3rem",
+            marginTop: "-4rem",
             left: 0,
             right: 0,
             textAlign: "center",
@@ -88,8 +88,8 @@ const ObjDetection = () => {
           ref={canvasRef}
           style={{
             position: "absolute",
-            marginLeft: "auto",
-            marginRight: "auto",
+            margin: "auto",
+            marginTop:"-4rem",
             left: 0,
             right: 0,
             textAlign: "center",
