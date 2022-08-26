@@ -25,7 +25,7 @@ const GitHubLinks = () => {
                 <div className="b-shdw">
                     <h1>Portfolio Site </h1>
 
-                    <div className="group"> 
+                    <div className="group">
 
                         <p>
                             TensorFlow model makes live predictions of the objects that appear in your webcam.
@@ -51,11 +51,9 @@ const GitHubLinks = () => {
 
                     </div>
 
-                    <div className="b-fixed">
 
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="gitcat" style={{ width: "3rem" }} onClick={() => openGit(1)} className="b-fixed in-shdw" />
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="gitcat" style={{ width: "3rem" }} onClick={() => openGit(1)} className="b-fixed in-shdw" />
 
-                    </div>
 
                 </div>
 
@@ -64,13 +62,14 @@ const GitHubLinks = () => {
 
                     <div className="group">
 
-                        <p> React.Js and Chart.Js display stock trading information for users to observe average returns, collect ticker information,
+                        <p>
+                            React.Js and Chart.Js display stock trading information for users to observe average returns, collect ticker information,
                             and see what sectors they are trading most. JavaScript server manages routes to MongoDB to save trade information.
                         </p>
 
 
                     </div>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="gitcat" style={{ width: "3rem" }} onClick={() => openGit(2)} className="b-fixed in-shdw"/>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="gitcat" style={{ width: "3rem" }} onClick={() => openGit(2)} className="b-fixed in-shdw" />
                 </div>
 
             </div>
