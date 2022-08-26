@@ -25,7 +25,7 @@ const GitHubLinks = () => {
                 <div className="b-shdw">
                     <h1>Portfolio Site </h1>
 
-                    <div className="group">
+                    <div className="group"> 
 
                         <p>
                             TensorFlow model makes live predictions of the objects that appear in your webcam.
