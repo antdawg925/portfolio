@@ -1,8 +1,7 @@
 import "../CSS/style.css"
 const Footer = () => {
     const linkedIn = () => {
-        window.open(
-            "https://www.linkedin.com/in/anthonyearly/", "_blank");
+        window.open( "https://www.linkedin.com/in/anthonyearly/", "_blank");
     }
 
     return (
