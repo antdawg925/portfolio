@@ -1,5 +1,0 @@
-{
-  "dependencies": {
-    "@tensorflow-models/coco-ssd": "^2.2.2"
-  }
-}
