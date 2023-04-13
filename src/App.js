@@ -4,6 +4,7 @@ import Home from './views/Home';
 import Three from './views/Three';
 import ObjDetection from './views/ObjDetection';
 import { Inqs } from './views/Inqs';
+import ChatBot from './views/ChatBot';
 function App() {
 
   return (
@@ -18,6 +19,8 @@ function App() {
         <Route path="/webcam" element={<ObjDetection />} />
 
         <Route path="/inquiries" element={<Inqs />} />
+
+        <Route path="/chatbot" element={<ChatBot />} />
 
         <Route path="*" element={<Home />} />
 
